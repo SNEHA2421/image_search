@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Search</title>
+    <link rel="stylesheet" href="static/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.min.css">
+    
+</head>
+<body class="theme-blush">
+    <div>
+        <div class="loader">
+            <div class="m-t-30">
+          <img src="static/images/test.png" alt="logo" style="width:900px; height:140px; margin-left: 300px; margin-top: -1%;">
+        </div>
+    </div>
+    <aside id="leftsidebar" class="sidebar">
+            <div class="navbar-brand">
+                <button class="btn-menu ls-toggle-btn" type="button"><i class="zmdi zmdi-menu"></i></button>
+                <a href="#"><img src="static/images/Blog-2.png" width="25" alt="Aero"><span class="m-l-10">Image Search Engine</span></a>
+            </div>
+            <div class="menu">
+                <ul class="list">
+                    <li><a href="/"><i class="zmdi zmdi-apps"></i><span>Home</span></a></li>
+                    <li><a href="/about"><i class="zmdi zmdi-search"></i><span>About</span></a></li>
+                    
+                </ul>
+            </div>
+        </aside>
+    <div style="padding-left: 300px;padding-top: 5%;">
+        <h1>Image Search</h1>
+
+            <div style="width:450px; float:left; background:#FFFFFF">
+                <form action="" enctype='multipart/form-data' method='POST'>
+                    <input type="file" name="picture" style="margin-top:20px;"/>
+                    <br>
+                    <i>Upload your picture, please click here: </i>
+                    <input type="submit" value="Upload" name="submit" class="button-new" style="margin-top:15px;"/>
+                    <br>
+                    <i>Start searching, please click here: </i>
+                    <input type="submit" value="Search" name="submit" class="button-new" style="margin-top:15px;"/>
+                </form>
+                <h3>{{message}}</h3>
+                
+            </div> 
+
+            <div style=" margin-left:450px; background:#FFFFFF">
+                    <h3>Searched result:</h3>
+                    <h4>Similarity of top 3: {{sml1}}, {{sml2}}, {{sml3}}</h4>
+                    <div>
+                        <img src="{{img1_tmb}}" height="200px" overflow=hidden/>
+                        <img src="{{img2_tmb}}" height="200px" overflow=hidden/>
+                        <img src="{{img3_tmb}}" height="200px" overflow=hidden/>
+                    </div>
+                    <h4>Similarity of 4 ~ 6: {{sml4}}, {{sml5}}, {{sml6}}</h4>
+                    <div>
+                        <img src="{{img4_tmb}}" height="200px" overflow=hidden/>
+                        <img src="{{img5_tmb}}" height="200px" overflow=hidden/>
+                        <img src="{{img6_tmb}}" height="200px" overflow=hidden/>
+                    </div>
+            </div>  
+    </div>
+    <script src="static/bundles/libscripts.bundle.js"></script>
+<script src="static/bundles/vendorscripts.bundle.js"></script>
+<script src="static/bundles/mainscripts.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+ 
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Search</title>
+<link rel="stylesheet" href="static/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.min.css">
+ 
+</head>
+ 
+<body class="theme-blush">
+    <div>
+        <div class="loader">
+            <div class="m-t-30">
+          <img src="static/images/test.png" alt="logo" style="width:900px; height:140px; margin-left: 300px; margin-top: -1%;">
+        </div>
+    </div>
+    <aside id="leftsidebar" class="sidebar">
+            <div class="navbar-brand">
+                <button class="btn-menu ls-toggle-btn" type="button"><i class="zmdi zmdi-menu"></i></button>
+                <a href="#"><img src="static/images/Blog-2.png" width="25" alt="Aero"><span class="m-l-10">CBIR Portal</span></a>
+            </div>
+            <div class="menu">
+                <ul class="list">
+                    <li><a href="/"><i class="zmdi zmdi-apps"></i><span>Home</span></a></li>
+                    <li><a href="/about"><i class="zmdi zmdi-search"></i><span>About</span></a></li>
+                    
+                </ul>
+            </div>
+        </aside>
+        <div style="padding-left: 300px; padding-top: 5%;">
+            <h1>Image Search Engine</h1>
+            <p>Image Search Engine consists of retrieving 
+                the most visually similar images to a given query image from a database of images.</p>
+            <p> Float16 to save CPU/GPU memory based on apex,
+                ResNet/DenseNet &
+                Pytorch
+                </p>
+            
+            
+            <img src="static/images/conv.png" width="400"/>
+            <p> - DataSet: CIFAR10, ResNet50, 1w Pictures collected by Web Crawler without label</p>
+            <p> - NetWork: Simple CNN(trained in CIFAR10), ResNet50(pretrained in ImageNet)</p>
+            
+        </div>
+        <script src="static/bundles/libscripts.bundle.js"></script>
+        <script src="static/bundles/vendorscripts.bundle.js"></script>
+        <script src="static/bundles/mainscripts.bundle.js"></script>
+</body>
+</html>
